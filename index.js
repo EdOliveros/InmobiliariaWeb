@@ -10,3 +10,6 @@ function toggleMenuMobile() {
     menuMobile.classList.toggle("inactive")
 }
 
+function insertasNuevosInmuebles () {
+    //esta funcion debe crear el objeto de cada inmueble
+}
