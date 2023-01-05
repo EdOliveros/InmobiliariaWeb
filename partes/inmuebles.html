@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap'); 
+        
+        :root {
+            --black: rgb(0, 0, 0);
+            --gris: #acacac;
+            --white: rgb(236, 236, 236);
+         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            font-size: 1.6rem;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .productList {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+        .inmueble {
+            width: 100%;
+            height: 35rem;
+            border: 0.1rem var(--gris) solid;
+            padding: 1rem;
+            border: 0.1rem var(--gris) solid;
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 2rem;
+            margin: 1.5rem; 
+        }
+        .imgInmueble {
+            width: 30rem;
+            height: 30rem;
+            object-fit: cover;
+            border-radius: 2rem;
+        }
+        .desContainer {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem;
+            margin-left: 1rem;
+        }
+        .title {
+            font-size: 2rem;
+            text-align: left;
+        }
+        .price {
+            font-weight: bold;
+            font-size: 1.3rem;
+            color: var(--gris);
+        }
+        .description {
+            font-size: 1.5rem;
+            text-align: justify;
+            margin-top: 1rem;
+        }
+        @media (max-width: 640px) {
+            .inmueble {
+                flex-direction: column;
+                height: auto;
+                align-items: center;
+            }
+            .imgInmueble {
+            width: 50rem;
+            height: 50rem;
+            margin-top: 2.5rem;
+            }
+            .desContainer {
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="productList">
+            <div class="inmueble">
+                <figure class="imgContainer">
+                    <img class="imgInmueble" src="https://images.pexels.com/photos/3643406/pexels-photo-3643406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="imagen del inmueble">
+                </figure>
+                <div class="desContainer">
+                    <h3 class="title">Cabaña</h3>
+                    <p class="price">$ 300,00</p>
+                    <p class="description">
+                        <p>Barrio: Cristo Rey</p>
+                        <p>Alcobas: 2</p>
+                        <p>Baños: 2</p>
+                        <p>Zona de Ropas: Sí</p>
+                        <p>Cocina: Integral</p>
+                        <p>Mascota: No</p>
+                        <p>Estrato: 5</p>
+                        <p>Parqueadero: No</p>
+                        <p>Pisos: 1</p>
+                    </p>
+                </div>
+            </div>
+        </div>
+           
+    </body>
+</html>

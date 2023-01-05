@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap'); 
+
+:root {
+    --black: rgb(0, 0, 0);
+    --gris: #acacac;
+    --white: rgb(255, 255, 255);
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.inactive {
+    display: none;
+}
+
+/* header */
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:  0.1rem var(--gris) solid ;
+    position: fixed;
+    top: 0;
+    padding: 0.8rem 2rem;
+    background-color: var(--white);
+}
+header .logoHeader {
+    width: 5rem;
+}
+header h1 {
+    font-size: 3rem;
+}
+.a-inicio {
+    text-decoration: none;
+}
+.a-inicio:visited {
+    color: var(--black);
+
+}
+header ul {
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+    margin-right: 1rem;
+}
+header ul li a {
+    text-decoration: none;
+}
+header .iconMenu {
+    width: 3rem;
+}
+header .iconMenu:hover { 
+    cursor: pointer;
+}
+
+/* Menu Mobile */
+.menuMobile {
+    border-radius: 2rem;
+    border: 0.1rem var(--gris) solid;
+    background-color: var(--white);
+    width: 10rem;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 7rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.menuMobile ul {
+    list-style: none;
+    text-align: right;
+}
+.menuMobileList a {
+    text-decoration: none;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 1rem;
+    background-color: var(--white);
+}
+footer figure {
+    display: flex;
+    align-items: center;
+}
+footer span {
+    font-size: 1.3rem;
+    color: var(--gris);
+}
+footer figure img {
+    width: 2rem;
+}
+
+/* lista de departamentos */
+.productList {
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.inmueble {
+    width: 100%;
+    height: 35rem;
+    border: 0.1rem var(--gris) solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 2rem;
+    margin: 1.5rem;
+}
+.imgInmueble {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+.desContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    margin-left: 1rem;
+}
+.title {
+    font-size: 2rem;
+    text-align: left;
+}
+.price {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: var(--gris);
+}
+.description {
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 1rem;
+}
+@media (max-width: 640px) {
+    .inmueble {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .imgInmueble {
+        width: 50rem;
+        height: 50rem;
+        margin-top: 2.5rem;
+    }
+    .desContainer {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .menuPrincipal {
+        display: none;
+    }
+    header figure {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .a-inicio {
+        width: 100%;
+    }
+    header figure h1 {
+        margin-left: 8vh;
+    }
+}
+
+
+@media (min-width: 640px) {
+    .iconMenu, .menuMobile {
+    display: none;
+    }
+    .inmueble {
+        width: 63rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .imgInmueble {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .imgInmueble {
+        width: 20rem;
+        height: 30rem;
+    }
+}
+

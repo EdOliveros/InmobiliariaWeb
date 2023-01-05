@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+        <title>Real State</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap'); 
+        
+        :root {
+            --black: rgb(0, 0, 0);
+            --gris: #acacac;
+            --white: rgb(236, 236, 236);
+         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            font-size: 1.6rem;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        header {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom:  0.1rem var(--gris) solid ;
+
+            padding: 0.8rem 2rem;
+            margin-top: 1rem;
+        }
+        header .logoHeader {
+            width: 5rem;
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header ul {
+            display: flex;
+            align-items: center;
+        }
+        header ul li {
+            list-style: none;
+            margin-right: 1rem;
+        }
+        header ul li a {
+            text-decoration: none;
+        }
+        header .iconMenu {
+            width: 3rem;
+        }
+
+        @media (max-width: 640px) {
+            .menuPrincipal {
+            display: none;
+            }
+            header figure {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+            header figure h1 {
+                margin-left: 8vh;
+            }
+        }
+        @media (min-width: 640px) {
+            .iconMenu {
+            display: none;
+            }
+        }
+        
+        </style>
+    </head>
+    <body>
+      <header>
+        <figure>
+            <img class="logoHeader" src="./icons/roof-icon.png" alt="logo-casa">
+            <h1>Real State</h1>
+        </figure>
+        <nav>
+            <img class="iconMenu" src="./icons/menu_FILL0_wght400_GRAD0_opsz48.png" alt="">
+            <ul class="menuPrincipal inactive">
+                <li>
+                    <a href="./">Home</a>
+                </li>
+                <li>
+                    <a href="./">All</a>
+                </li>
+                <li>
+                    <a href="./">About Us</a>
+                </li>
+                <li>
+                    <a href="./">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+      </header>  
+    </body>
+</html>

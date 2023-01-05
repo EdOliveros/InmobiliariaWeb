@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+
+        <style>
+         @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap'); 
+        
+        :root {
+            --black: rgb(0, 0, 0);
+            --gris: #acacac;
+            --white: rgb(255, 255, 255);
+         }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 62.5%;
+        }
+        
+        body {
+            font-size: 1.6rem;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+        .menuMobile {
+            border-radius: 2rem;
+            border: 0.1rem var(--gris) solid;
+            background-color: var(--white);
+            width: 10rem;
+            height: 12rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: 0;
+            font-weight: bold;
+        }
+        .menuMobile ul {
+            list-style: none;
+            text-align: right;
+        }
+        .menuMobileList a {
+            text-decoration: none;
+        }
+        </style>
+    </head>
+    <body>
+       <div class="menuMobile inactive">
+        <ul class="menuMobileList">
+            <li>
+                <a href="./">Home</a>
+            </li>
+            <li>
+                <a href="./">All</a>
+            </li>
+            <li>
+                <a href="./">About Us</a>
+            </li>
+            <li>
+                <a href="./">Contacto</a>
+            </li>
+        </ul>
+       </div> 
+    </body>
+</html>
